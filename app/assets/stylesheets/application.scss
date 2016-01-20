@@ -1,0 +1,174 @@
+$thumbnail-border-radius: 2px;
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+$blue: #1E99CC;
+$grey: #6D6E71;
+$white: #f0f0f0;
+$font-size: 1.0em;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-size;
+  color: $grey;
+  margin-top: 120px;
+}
+
+.container {
+  width: 90%;
+}
+
+a{
+  color: $grey;
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+header {
+  .navbar-default {
+    height: 100px;
+    background-color: $white;
+    border: 0;
+
+    .navbar-nav {
+
+      li {
+        padding: 0 25px;
+        background-color: $white;
+
+        a{
+          text-transform: uppercase;
+          font-size: $font-size * 1.2;
+          height: 100px;
+          line-height: 100px;
+          padding: 5px;
+          color: $grey;
+
+          &:hover, &.active {
+            border-bottom: 2px solid $blue;
+            color: $blue;
+          }
+        }
+
+        .nav-ava {
+          height: 70px;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .logo {
+      margin-top: 10px;
+      max-height: 70px;
+      display: block;
+    }
+  }
+}
+
+.intro {
+  width: 100%;
+  text-align: center;
+  padding: 75px 0;
+
+  h1 {
+    color: $grey;
+    text-transform: uppercase;
+    font-size: $font-size * 6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: $grey;
+    font-size: $font-size * 2.8;
+    font-style: italic;
+  }
+
+  h3 {
+    color: $blue;
+    font-size: $font-size * 1.5;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
+
+.selection_nav {
+  margin: 10px 0;
+  height: 50px;
+  background-color: $grey;
+  color: $white;
+  text-align: center;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      position: relative;
+
+      a {
+        color: $white;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-size: $font-size * 1.5;
+        padding: 16px 25px;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+
+      &.active {
+        a {
+          color: $blue;
+        }
+
+        &:before {
+          position: absolute;
+          width: 0;
+          height: 0;
+          left: 36%;
+          top: 50px;
+          border-style: solid;
+          border-width: 15px 15px 0 15px;
+          border-color: $grey transparent transparent transparent;
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.showcase {
+  margin: 50px 0 30px 0;
+}
+
+footer{
+  background-color: $grey;
+  color: $white;
+  margin:0;
+
+  p {
+    padding: 50px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size;
+
+    a{
+      color: $white;
+    }
+  }
+}
