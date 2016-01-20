@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.3.3'
+lock '3.4.0'
 
 set :application, 'bauke-portfolio'
 set :repo_url, 'git@github.com:baukevw/bauke-portfolio.git'
