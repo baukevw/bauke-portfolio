@@ -14,5 +14,5 @@ server '178.62.214.132:3001', user: 'deploy', roles: %w{web app db}
 
 set :deploy_to, "/home/deploy/railsapps/baukeme/staging/current/public"
 
-set :rails_env, 'development'
+set :rails_env, 'staging'
 set :branch, 'develop'
